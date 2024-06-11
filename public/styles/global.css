@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @keyframes colorChange {
     0% {
         background-color: #93f6fb;

@@ -1,25 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
+import Navbar from "../components/Navbar.astro";
 
 const pageTitle = "Tintte Sustainable Colors";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<header class="bg-transparent text-white p-4 fixed top-0 left-0 w-full flex justify-between items-center z-50">
-		<a href="#hero">
-		  <img src="/tintte_logo.png" alt="Logo" class="h-12" />
-		</a>
-		<nav>
-		  <ul class="flex space-x-4">
-			<li>
-			  <a href="#product" class="text-slate-500 hover:text-white active:text-slate-200 shadow-md transition-colors duration-300">Product</a>
-			</li>
-			<li>
-			  <a href="#about" class="text-slate-500 hover:text-white active:text-slate-200 shadow-md transition-colors duration-300">Team</a>
-			</li>
-		  </ul>
-		</nav>
-	  </header>
-  <Hero />
+  <header>
+    <Navbar />
+  </header>
+
+  <main>
+    <Hero />
+  </main>
 </BaseLayout>
