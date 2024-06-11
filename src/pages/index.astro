@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+
+const pageTitle = "Tintte Sustainable Colors";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <header
+    class="bg-transparent text-white p-4 fixed top-0 left-0 w-full flex justify-between items-center z-50"
+  >
+    <img src="/tintte_logo.png" alt="Logo" class="h-12" />
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="text-slate-500">Home</a></li>
+        <li><a href="#about" class="text-slate-500">About</a></li>
+        <li><a href="#contact" class="text-slate-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <Hero />
+</BaseLayout>
