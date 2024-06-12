@@ -6,47 +6,57 @@
 /* Custom styles */
 body,
 html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @keyframes colorChange {
-  0% {
-    background-color: #93f6fb;
-  }
+    0% {
+        background-color: #93f6fb;
+    }
 
-  20% {
-    background-color: #eaee84;
-  }
+    20% {
+        background-color: #eaee84;
+    }
 
-  40% {
-    background-color: #d3f734;
-  }
+    40% {
+        background-color: #d3f734;
+    }
 
-  60% {
-    background-color: #fba454;
-  }
+    60% {
+        background-color: #fba454;
+    }
 
-  80% {
-    background-color: #f89ae5;
-  }
+    80% {
+        background-color: #f89ae5;
+    }
 
-  100% {
-    background-color: #93f6fb;
-    /* Back to the starting color for smooth loop */
-  }
+    100% {
+        background-color: #93f6fb;
+        /* Back to the starting color for smooth loop */
+    }
 }
 
 .hero-section {
-  animation: colorChange 10s infinite;
-  transition: background-color 1s ease;
+    animation: colorChange 10s infinite;
+    transition: background-color 1s ease;
 }
 
 .hero-image {
-  opacity: 0.9;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.5s ease;
+    opacity: 0.9;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+/* Define default navbar style */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+/* Define scrolled navbar style */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
 }
